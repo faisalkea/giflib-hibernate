@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head th:replace="layout :: head('explore')"></head>
 <body>
 <div th:replace="layout :: nav"></div>
@@ -19,7 +19,7 @@
 </div>
 <div th:replace="layout :: scripts"></div>
 
-<div class="container" th:replace="/footer :: footer">
+<div class="container" th:replace="footer :: footer">
     <p>footer</p>
 </div>
 
