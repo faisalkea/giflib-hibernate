@@ -4,8 +4,7 @@
 /out/
 /build/
 
-## Gradle
-##.gradle/
+
 
 ## Package Files #
 *.jar
