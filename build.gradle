@@ -32,22 +32,5 @@ dependencies {
     compile 'com.h2database:h2:1.4.191'
 }
 
-task stage() {
-    dependsOn clean, war
+task stage(dependsOn: ['build']) {
 }
-tasks.stage.doLast() {
-    delete fileTree(dir: "build/distributions")
-    delete fileTree(dir: "build/assetCompile")
-    delete fileTree(dir: "build/distributions")
-    delete fileTree(dir: "build/libs", exclude: "*.war")
-}
-war.mustRunAfter clean
-
-task copyToLib(type: Copy) {
-    into "$buildDir/server"
-    from(configurations.compile) {
-        include "webapp-runner*"
-    }
-}
-
-stage.dependsOn(copyToLib)
