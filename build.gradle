@@ -33,7 +33,7 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = gradleWrapperVersion
+    gradleVersion = 2.11
 }
 
 task stage() {
