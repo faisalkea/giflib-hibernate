@@ -4,11 +4,3 @@
 /out/
 /build/
 
-
-
-## Package Files #
-#*.jar
-!h2*.jar
-*.war
-*.ear
-.gradle/
