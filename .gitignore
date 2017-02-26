@@ -5,7 +5,7 @@
 /build/
 
 ## Gradle
-.gradle/
+##.gradle/
 
 ## Package Files #
 *.jar
