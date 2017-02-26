@@ -1,5 +1,5 @@
 # gif.lib
-This application is used in the Spring with Hibernate Treehouse course. The app was originally built in the Spring Basics course, and its functionality is extended in the following ways:
+This application is used in the Spring with Hibernate Tech 1 & 2 course. The app was originally built in the Spring Basics course, and its functionality is extended in the following ways:
  
 - Adds persisted data, using an H2 database
 - Manages data with Hibernate
