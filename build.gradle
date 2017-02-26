@@ -32,5 +32,10 @@ dependencies {
     compile 'com.h2database:h2:1.4.191'
 }
 
-task stage(dependsOn: ['build']) {
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleWrapperVersion
+}
+
+task stage() {
+    dependsOn clean, war
 }
